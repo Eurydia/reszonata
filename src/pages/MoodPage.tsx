@@ -1,16 +1,12 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import {
   amber,
-  blue,
   blueGrey,
   deepOrange,
-  green,
   grey,
   lightBlue,
-  lightGreen,
-  lime,
-  orange,
-  pink,
+ lime,
+ pink,
   purple,
   yellow,
 } from "@mui/material/colors";
