@@ -1,7 +1,6 @@
 import { FC, Fragment, useState } from "react";
 import {
   AppBar,
-  Autocomplete,
   Box,
   Container,
   CssBaseline,

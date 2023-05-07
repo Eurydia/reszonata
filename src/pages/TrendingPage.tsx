@@ -1,10 +1,5 @@
 import { Box, Button, Grid, Stack, Typography } from "@mui/material";
-import {
-  amber,
-  deepOrange,
-  lightGreen,
-  teal,
-} from "@mui/material/colors";
+import { amber, deepOrange } from "@mui/material/colors";
 import { FC } from "react";
 
 type TrendingItemProps = {
