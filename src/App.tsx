@@ -45,6 +45,7 @@ export const App: FC = () => {
             <Grid item md={3} />
             <Grid item md={6}>
               <TextField
+                fullWidth
                 variant="standard"
                 placeholder="Search"
                 InputProps={{
