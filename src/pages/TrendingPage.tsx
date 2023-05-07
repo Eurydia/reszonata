@@ -79,32 +79,6 @@ export const TrendingPage: FC = () => {
             </Grid>
           </Grid>
         </Box>
-        <Typography fontSize="x-large">
-          Trending this month
-        </Typography>
-        <Box>
-          <Grid container spacing={2}>
-            <Grid item md={12}>
-              <TrendingItem
-                title="Track #1"
-                background={`linear-gradient(to bottom right, ${lightGreen[200]}cc, ${teal[200]}cc)`}
-              />
-            </Grid>
-            {[2, 3, 4].map((index) => {
-              return (
-                <Grid item md={6} key={`placeholder-${index}`}>
-                  <TrendingItem
-                    title={`Track #${index}`}
-                    background={`linear-gradient(to bottom right, ${lightGreen[200]}cc, ${teal[200]}cc)`}
-                  />
-                </Grid>
-              );
-            })}
-            <Grid item md={6}>
-              <SeeMoreButton />
-            </Grid>
-          </Grid>
-        </Box>
       </Stack>
     </Box>
   );

@@ -1,12 +1,15 @@
 import { Box, Button, Stack, Typography } from "@mui/material";
 import {
   amber,
+  blue,
   blueGrey,
   deepOrange,
+  deepPurple,
   grey,
   lightBlue,
- lime,
- pink,
+  lime,
+  orange,
+  pink,
   purple,
   yellow,
 } from "@mui/material/colors";
@@ -49,34 +52,39 @@ export const MoodPage: FC = () => {
           colorB={pink[400]}
         />
         <MoodItem
-          title="Nostalgic"
-          colorA={amber[700]}
-          colorB={yellow[300]}
-        />
-        <MoodItem
-          title="Energetic"
-          colorA={lightBlue[400]}
-          colorB={lime[300]}
-        />
-        <MoodItem
-          title="Stellar"
-          colorA={purple[300]}
-          colorB={amber[400]}
-        />
-        <MoodItem
           title="Serene"
           colorA={lightBlue[500]}
           colorB={grey[200]}
         />
         <MoodItem
-          title="Dramatic"
-          colorA={deepOrange[200]}
-          colorB={purple[600]}
+          title="Reatless"
+          colorA={lightBlue[400]}
+          colorB={lime[300]}
         />
         <MoodItem
+          title="Stellar"
+          colorA={purple[600]}
+          colorB={amber[300]}
+        />
+        <MoodItem
+          title="Romantic"
+          colorA={pink[200]}
+          colorB={purple[600]}
+        />
+        {/* <MoodItem
+          title="Restless"
+          colorA={deepOrange[200]}
+          colorB={purple[600]}
+        /> */}
+        <MoodItem
           title="Melancholic"
-          colorA={blueGrey[200]}
-          colorB={grey[700]}
+          colorA={blue[200]}
+          colorB={grey[800]}
+        />
+        <MoodItem
+          title="Nostalgic"
+          colorA={orange[300]}
+          colorB={lightBlue[300]}
         />
       </Stack>
     </Box>

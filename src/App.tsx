@@ -45,21 +45,13 @@ export const App: FC = () => {
           <Grid container>
             <Grid item md={3} />
             <Grid item md={6}>
-              <Autocomplete
-                options={[]}
-                noOptionsText="No result found"
-                renderInput={({ InputProps, ...props }) => (
-                  <TextField
-                    {...props}
-                    variant="standard"
-                    placeholder="Search"
-                    InputProps={{
-                      ...InputProps,
-                      disableUnderline: true,
-                      startAdornment: <Search />,
-                    }}
-                  />
-                )}
+              <TextField
+                variant="standard"
+                placeholder="Search"
+                InputProps={{
+                  disableUnderline: true,
+                  startAdornment: <Search />,
+                }}
               />
             </Grid>
           </Grid>
@@ -131,7 +123,7 @@ export const App: FC = () => {
             </Stack>
           </Grid>
           <Grid item md={6}>
-            <Container>
+            <Container sx={{ paddingBottom: 2 }}>
               {pageIndex === 0 ? <FeaturedPage /> : <Fragment />}
               {pageIndex === 1 ? <TrendingPage /> : <Fragment />}
               {pageIndex === 2 ? <MoodPage /> : <Fragment />}
