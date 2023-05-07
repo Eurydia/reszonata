@@ -1,5 +1,5 @@
 import { Box, Button, Grid, Stack, Typography } from "@mui/material";
-import { lightBlue, purple, yellow } from "@mui/material/colors";
+import { lightBlue, purple } from "@mui/material/colors";
 import { FC } from "react";
 
 type FeaturedItemProps = {
@@ -58,24 +58,6 @@ export const FeaturedPage: FC = () => {
                   <FeaturedItem
                     title={`Track #${index}`}
                     background={`linear-gradient(to bottom right, ${lightBlue[200]}cc, ${purple[200]}cc)`}
-                  />
-                </Grid>
-              );
-            })}
-            <Grid item md={6}>
-              <SeeMoreButton />
-            </Grid>
-          </Grid>
-        </Box>
-        <Typography fontSize="x-large">Curiously awesome</Typography>
-        <Box>
-          <Grid container spacing={2}>
-            {[1, 2, 3].map((index) => {
-              return (
-                <Grid item md={6} key={`placeholder-${index}`}>
-                  <FeaturedItem
-                    title={`Artist #${index}`}
-                    background={`linear-gradient(to bottom right, ${yellow[200]}cc, ${purple[200]}cc)`}
                   />
                 </Grid>
               );
